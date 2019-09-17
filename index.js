@@ -1,7 +1,7 @@
 const request = require('request'); // making an API call using request
 const argv = require('yargs').argv; // integrate yargs. Yargs works by exposing any variables we use in the console onto the argv object.
 
-let apiKey = '927b698f4cabb4200220709d2630004b'; // create a variable for the API key
+let apiKey = "12345" // create a variable for the API key
 let city = argv.c || 'Brampton'; // c is the property of argv which denotes the city. If no city is inputted, use Brampton
 let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
 // created a variable and assigned it to the OpenMaps URL with its two required parameters (as shown in the documentation)
